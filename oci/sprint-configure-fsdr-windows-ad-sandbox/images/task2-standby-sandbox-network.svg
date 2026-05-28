@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Standby sandbox network placeholder</title>
+  <desc id="desc">Placeholder showing a standby sandbox subnet with no route to Active Directory and restrictive Network Security Groups.</desc>
+  <rect width="1200" height="675" fill="#f8f9fb"/>
+  <text x="80" y="105" font-family="Arial, sans-serif" font-size="34" fill="#1f2937">Task 2 Placeholder</text>
+  <text x="80" y="150" font-family="Arial, sans-serif" font-size="26" fill="#374151">Prepare standby sandbox subnet and NSGs</text>
+  <rect x="90" y="220" width="430" height="250" rx="8" fill="#e9f8ef" stroke="#238636" stroke-width="2"/>
+  <text x="125" y="270" font-family="Arial, sans-serif" font-size="26" fill="#155724">Sandbox subnet</text>
+  <text x="125" y="315" font-family="Arial, sans-serif" font-size="20" fill="#155724">Private regional subnet</text>
+  <text x="125" y="350" font-family="Arial, sans-serif" font-size="20" fill="#155724">Restrictive route table</text>
+  <text x="125" y="385" font-family="Arial, sans-serif" font-size="20" fill="#155724">Sandbox NSG attached</text>
+  <rect x="710" y="220" width="380" height="250" rx="8" fill="#fff4df" stroke="#b7791f" stroke-width="2"/>
+  <text x="745" y="270" font-family="Arial, sans-serif" font-size="26" fill="#6b4e16">Active Directory</text>
+  <text x="745" y="315" font-family="Arial, sans-serif" font-size="20" fill="#6b4e16">Domain controllers</text>
+  <text x="745" y="350" font-family="Arial, sans-serif" font-size="20" fill="#6b4e16">AD DNS</text>
+  <line x1="520" y1="345" x2="710" y2="345" stroke="#dc2626" stroke-width="5" stroke-dasharray="12 8"/>
+  <text x="545" y="320" font-family="Arial, sans-serif" font-size="22" fill="#b91c1c">No route / no egress</text>
+  <text x="80" y="610" font-family="Arial, sans-serif" font-size="20" fill="#4b5563">Replace with OCI VCN subnet, route table, and NSG screenshots.</text>
+</svg>

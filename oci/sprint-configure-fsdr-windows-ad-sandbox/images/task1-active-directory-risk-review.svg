@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Active Directory risk review placeholder</title>
+  <desc id="desc">Placeholder checklist for duplicate Windows machine identity risk during a Full Stack DR drill.</desc>
+  <rect width="1200" height="675" fill="#f8f9fb"/>
+  <text x="80" y="105" font-family="Arial, sans-serif" font-size="34" fill="#1f2937">Task 1 Placeholder</text>
+  <text x="80" y="150" font-family="Arial, sans-serif" font-size="26" fill="#374151">Review the Active Directory drill risk</text>
+  <rect x="80" y="210" width="1040" height="330" rx="8" fill="#ffffff" stroke="#7d8793" stroke-width="2"/>
+  <text x="120" y="270" font-family="Arial, sans-serif" font-size="24" fill="#111827">Checklist</text>
+  <text x="145" y="325" font-family="Arial, sans-serif" font-size="22" fill="#374151">[ ] Windows computer name and NetBIOS name documented</text>
+  <text x="145" y="370" font-family="Arial, sans-serif" font-size="22" fill="#374151">[ ] Domain FQDN and domain controller CIDRs documented</text>
+  <text x="145" y="415" font-family="Arial, sans-serif" font-size="22" fill="#374151">[ ] Source VNICs identified for each protected server</text>
+  <text x="145" y="460" font-family="Arial, sans-serif" font-size="22" fill="#374151">[ ] Drill copy must not reach Active Directory</text>
+  <text x="80" y="610" font-family="Arial, sans-serif" font-size="20" fill="#4b5563">Replace with risk table or OCI/Windows inventory screenshot.</text>
+</svg>
