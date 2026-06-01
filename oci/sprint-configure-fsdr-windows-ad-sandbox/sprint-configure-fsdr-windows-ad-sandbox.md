@@ -2,8 +2,6 @@
 
 Duration: 60 minutes
 
-Estimated Time: 60 minutes
-
 ## Introduction
 
 Windows servers that belong to Active Directory need extra care during disaster recovery drills. A moving compute instance created by Oracle Cloud Infrastructure Full Stack Disaster Recovery (OCI Full Stack DR) can keep the same Windows computer name and NetBIOS identity as the production server. If the drill copy can reach the same domain controllers as production, Active Directory can see two machines with the same identity at the same time. That can break the machine account secure channel, create DNS or SPN conflicts, and make the drill unsafe.
