@@ -294,7 +294,13 @@ For a DR Drill, Full Stack DR reads the region-specific drill tags from the sour
 
 ## Summary
 
-You configured a Windows Active Directory safe drill pattern for OCI Full Stack DR moving instances. The standard VNIC mapping remains required and stays in place for failover and switchover. For drills, Full Stack DR must create the recovered instance in an alternate sandbox subnet and attach NSGs that prevent connectivity to Active Directory. The `FullStackDRDrill_<REGION_KEY>_SubnetId`, `FullStackDRDrill_<REGION_KEY>_NSGId1`, and `FullStackDRDrill_<REGION_KEY>_NSGId2` tags make the DR Drill placement explicit for each target region.
+You configured a Windows Active Directory safe drill pattern for OCI Full Stack DR moving instances. 
+
+The standard VNIC mapping remains required and stays in place for failover and switchover. 
+
+For drills, Full Stack DR must create the recovered instance in an alternate sandbox subnet and attach NSGs that prevent connectivity to Active Directory. 
+
+The `FullStackDRDrill_<REGION_KEY>_SubnetId`, `FullStackDRDrill_<REGION_KEY>_NSGId1`, and `FullStackDRDrill_<REGION_KEY>_NSGId2` tags make the DR Drill placement explicit for each target region.
 
 ## Learn More
 
