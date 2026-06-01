@@ -67,7 +67,7 @@ For IAM guidance, see:
 
     For domain-joined Windows moving instances, use a standby subnet that does not route to domain controllers, DNS resolvers that forward to domain controllers, or on-premises AD networks.
 
-    ![Checklist of Active Directory duplicate identity risks for a Windows Full Stack DR drill.](./images/task1-active-directory-risk-review.svg "image")
+    ![Checklist of Active Directory duplicate identity risks for a Windows Full Stack DR drill.](./images/task1-active-directory-risk-review.png "image")
     <br>**Figure:** Active Directory duplicate identity risk review.
 
 ## Task 2: Prepare the Standby Sandbox Subnet and NSGs
@@ -107,7 +107,7 @@ For IAM guidance, see:
 
     Use OCI Bastion, a jump host in a controlled management subnet, or Run Command if you need to inspect the recovered drill instance. Do not solve operator access by reconnecting the sandbox subnet to Active Directory.
 
-    ![Standby sandbox subnet with route table and NSG boundaries preventing traffic to Active Directory domain controllers.](./images/task2-standby-sandbox-network.svg "image")
+    ![Standby sandbox subnet with route table and NSG boundaries preventing traffic to Active Directory domain controllers.](./images/task2-standby-sandbox-network.png "image")
     <br>**Figure:** Standby sandbox subnet and NSG isolation design.
 
 ## Task 3: Apply DR Drill Placement Tags to the Source Windows Instance
@@ -161,7 +161,7 @@ Use tags on the source Windows compute instance to tell Full Stack DR which alte
 
     The instance **Tags** tab should show one subnet tag and two NSG tags for each drill target region. The file [files/fsdr-ad-sandbox-tags-template.json](./files/fsdr-ad-sandbox-tags-template.json) contains a compact reference for the same tag names and placeholder values.
 
-    ![OCI tag placeholders showing region-specific DR Drill alternate subnet and NSG tag keys for a Windows moving instance.](./images/task3-placement-tags.svg "image")
+    ![OCI tag placeholders showing region-specific DR Drill alternate subnet and NSG tag keys for a Windows moving instance.](./images/task3-placement-tags.png "image")
     <br>**Figure:** Region-specific DR Drill placement tag pattern for Windows Active Directory isolated drills.
 
 ## Task 4: Configure the Standard Full Stack DR VNIC Mapping
@@ -204,7 +204,7 @@ For a DR Drill, Full Stack DR reads the region-specific drill tags from the sour
 
 7. Publish the DR protection group changes.
 
-    ![Full Stack DR moving-instance VNIC mapping with destination subnet and destination NSG list sourced from placement tags.](./images/task4-fsdr-vnic-mapping.svg "image")
+    ![Full Stack DR moving-instance VNIC mapping with destination subnet and destination NSG list sourced from placement tags.](./images/task4-fsdr-vnic-mapping.png "image")
     <br>**Figure:** FSDR moving-instance VNIC mapping for an AD-isolated Windows drill.
 
 8. For API, SDK, Terraform, or automation workflows, confirm that the standard mapping contains the failover and switchover subnet and NSG values.
@@ -267,7 +267,7 @@ For a DR Drill, Full Stack DR reads the region-specific drill tags from the sour
     * TCP tests to LDAP, SMB, Kerberos, and Global Catalog ports fail.
     * Application-level checks that do not require Active Directory can proceed inside the sandbox.
 
-    ![Drill validation showing recovered Windows instance placed in sandbox subnet and unable to reach Active Directory ports.](./images/task5-drill-validation.svg "image")
+    ![Drill validation showing recovered Windows instance placed in sandbox subnet and unable to reach Active Directory ports.](./images/task5-drill-validation.png "image")
     <br>**Figure:** Drill validation for sandbox subnet and Active Directory isolation.
 
 ## Task 6: Operationalize the Pattern
